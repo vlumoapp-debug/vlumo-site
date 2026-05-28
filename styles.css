@@ -159,12 +159,13 @@ footer a:hover { color: var(--ink); }
   flex: 1;
 }
 .legal-content h1 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Outfit", system-ui, sans-serif;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 38px;
   color: var(--ink);
   margin-bottom: 8px;
-  line-height: 1.1;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
 }
 .legal-content .updated {
   color: var(--ink-light);
@@ -172,12 +173,13 @@ footer a:hover { color: var(--ink); }
   margin-bottom: 32px;
 }
 .legal-content h2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Outfit", system-ui, sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 22px;
   margin-top: 44px;
   margin-bottom: 14px;
   color: var(--ink);
+  letter-spacing: -0.2px;
 }
 .legal-content h3 {
   font-size: 13px;
