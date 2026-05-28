@@ -160,8 +160,8 @@ footer a:hover { color: var(--ink); }
 }
 .legal-content h1 {
   font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  font-size: 48px;
+  font-weight: 700;
+  font-size: 52px;
   color: var(--ink);
   margin-bottom: 8px;
   line-height: 1.1;
@@ -173,10 +173,10 @@ footer a:hover { color: var(--ink); }
 }
 .legal-content h2 {
   font-family: "Cormorant Garamond", serif;
-  font-weight: 600;
-  font-size: 26px;
-  margin-top: 40px;
-  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 44px;
+  margin-bottom: 14px;
   color: var(--ink);
 }
 .legal-content h3 {
