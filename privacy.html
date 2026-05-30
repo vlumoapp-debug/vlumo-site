@@ -18,11 +18,11 @@
 
   <main class="legal-content">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: April 20, 2026</p>
+    <p class="updated">Last updated: May 30, 2026</p>
 
     <p>vlumo ("we", "us", "our") provides a lifestyle app to help you organize your schedule, budget, debts, savings, and wellness habits. This Privacy Policy explains what we collect, how we use it, and your rights.</p>
 
-    <div class="tldr"><strong>TL;DR:</strong> We only collect what's needed to make the app work for you. We don't sell your data. Ever.</div>
+    <div class="tldr"><strong>TL;DR:</strong> We only collect what's needed to make the app work and improve it. We don't sell your data. Ever.</div>
 
     <hr />
 
@@ -30,22 +30,36 @@
 
     <h3>Information you give us</h3>
     <ul>
-      <li><strong>Email address</strong> — used only to create your account, sign you in, and send password-reset links.</li>
-      <li><strong>Name</strong> — used to personalize the app (the greeting, for example). Stored with your account.</li>
-      <li><strong>Lifestyle data you enter into the app</strong> — events, reminders, water intake, monthly income, expenses, debts, savings goals, and similar information. All of this lives in your account.</li>
+      <li><strong>Email address</strong> — used to create your account, sign you in, and send password-reset links.</li>
+      <li><strong>First name</strong> — used to personalize the app (greetings and copy). Stored with your account.</li>
+      <li><strong>Lifestyle data you enter into the app</strong> — events, calendar items, reminders, water intake, monthly income, expenses, debts, savings goals, theme preference, day-start hour, notification preferences, and similar information. All of this lives in your account.</li>
     </ul>
 
     <h3>Information we do NOT collect</h3>
     <ul>
       <li>We do not collect your real name, physical address, phone number, date of birth, or any government ID.</li>
-      <li>We do not access your phone's contacts, photos, location, microphone, or camera.</li>
+      <li>We do not access your phone's contacts, photos, location, or camera.</li>
+      <li>We do not access your microphone in v1. (If a future version uses voice features, we will request that permission explicitly first.)</li>
       <li>We do not read your emails, messages, or any other apps.</li>
     </ul>
 
     <h3>Information collected automatically</h3>
     <ul>
+      <li><strong>Product analytics</strong> — we use <strong>PostHog</strong> (PostHog Inc., US-hosted) to understand how vlumo is used so we can improve it. We capture anonymous event names like "app opened", "onboarding step completed", "settings opened" and similar product interactions. After you sign in, these events are associated with your account so we can measure things like signup-to-onboarding-completion rates.
+        <ul>
+          <li>We do <strong>not</strong> send PostHog the exact values of your financial data. When you enter a monthly income or savings goal, we send only a bucket like "2.5k-5k" so we can see aggregate ranges across users, never your specific amounts.</li>
+          <li>We do <strong>not</strong> use session replay, screen recording, or any form of behavioural tracking beyond the discrete events listed above.</li>
+          <li>See <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's privacy policy</a>.</li>
+        </ul>
+      </li>
       <li><strong>Basic error diagnostics</strong> — if the app crashes, we may log the crash and the device model (e.g. "iPhone 15 Pro") so we can fix it. No personal data is sent with crash logs.</li>
-      <li><strong>No analytics tracking</strong> — we do not use Google Analytics, Facebook Pixel, or any third-party advertising/analytics service inside the app.</li>
+      <li><strong>No advertising trackers</strong> — we do not use Google Analytics, Facebook Pixel, AppsFlyer, or any third-party advertising/attribution service.</li>
+    </ul>
+
+    <h3>Device permissions we may request</h3>
+    <ul>
+      <li><strong>Notifications</strong> — if you opt in to break, hydration, snack, wind-down, or daily-briefing reminders, iOS will ask permission to display notifications. All notification content is generated on your device. We never send your data to anyone in order to deliver a notification.</li>
+      <li><strong>Biometric authentication (Face ID / Touch ID)</strong> — used only to unlock the optional PIN lock if you enable it. We never see your biometric data.</li>
     </ul>
 
     <hr />
@@ -63,7 +77,8 @@
     <hr />
 
     <h2>3. Where your data lives</h2>
-    <p>Your account and app data are stored with <strong>Supabase, Inc.</strong>, our database and authentication provider. Supabase hosts data in secure data centers and encrypts it both in transit (TLS) and at rest (AES-256). See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's privacy policy</a> for details on their practices.</p>
+    <p>Your account and app data are stored with <strong>Supabase, Inc.</strong>, our database and authentication provider. Supabase hosts data in secure data centers and encrypts it both in transit (TLS) and at rest (AES-256). See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's privacy policy</a>.</p>
+    <p>Anonymous and identified product-usage events are sent to <strong>PostHog Inc.</strong> (US-hosted). PostHog encrypts data in transit and at rest. See <a href="https://posthog.com/privacy" target="_blank" rel="noopener">PostHog's privacy policy</a>.</p>
     <p>Your PIN (if you set one) is stored <strong>only on your device</strong> — hashed and salted — and is never uploaded.</p>
 
     <hr />
@@ -71,9 +86,10 @@
     <h2>4. Who we share data with</h2>
     <p>We do not sell or rent your data. We share it only:</p>
     <ul>
-      <li><strong>With Supabase</strong>, our infrastructure provider, as described above</li>
+      <li><strong>With Supabase</strong>, our infrastructure and authentication provider, as described above</li>
+      <li><strong>With PostHog</strong>, our product analytics provider, as described above</li>
       <li><strong>If legally required</strong> — for example, a valid subpoena or court order</li>
-      <li><strong>If you ask us to</strong> — for example, exporting your data to another service (not yet built, but on the roadmap)</li>
+      <li><strong>If you ask us to</strong> — for example, exporting your data to another service (on the roadmap)</li>
     </ul>
     <p>We do not share your data with advertisers, data brokers, or any third parties for marketing purposes.</p>
 
